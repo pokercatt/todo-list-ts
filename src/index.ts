@@ -42,6 +42,7 @@ function addListItem(task: Task) {
     task.completed = checkbox.checked;
     saveTasks();
   });
+  checkbox.checked = task.completed;
 
   label.append(checkbox, task.title);
   item.append(label);
